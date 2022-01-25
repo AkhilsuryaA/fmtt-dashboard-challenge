@@ -1,0 +1,74 @@
+body {
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+}
+
+.mainfont {
+    
+}
+
+.main {
+    margin: 25% 15% ;
+}
+
+.card {
+    border-radius: 5px;
+}
+
+.namecard {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.bg-desat-blue {
+    background-color:  hsl(235, 45%, 61%);
+}
+
+.bg-pale-blue {
+    background-color:  hsl(236, 100%, 87%);
+}
+.bg-pale-blue {
+    background-color:  hsl(236, 100%, 87%);
+}
+.bg-pale-blue {
+    background-color:  hsl(235, 46%, 20%);
+}
+
+.row {
+    display: flex;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
