@@ -1,60 +1,230 @@
 body {
     background-color: hsl(226, 43%, 10%);
     color: white;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
 }
 
-.mainfont {
-    
+.container {
+    margin: 12% 4%;
+    display: block;
 }
 
-.main {
-    margin: 25% 15% ;
+p {
+    font-size: 12px;
+    margin: 0px;
+    color: hsl(236, 100%, 87%);
 }
 
-.card {
-    border-radius: 5px;
+h1 {
+    margin: 0px;
+    font-weight: 400;
 }
 
-.namecard {
-    background-color: hsl(264, 64%, 52%);
+h2 {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 3rem;
 }
 
-.bg-desat-blue {
-    background-color:  hsl(235, 45%, 61%);
+.title-card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgb(55, 56, 59);
+    transition: 0.3s;
+    background-color: hsl(235, 46%, 20%);
+    margin: 2%;
+    border-radius: 8px;
+  }
+  
+  .title-card-top {
+    background-color: hsl(246, 80%, 60%);
+      height: 55%;
+      padding: 3%;
+      border-radius: 8px;
+      display: flex;
+  }
+  /* On mouse-over, add a deeper shadow */
+  .title-card:hover {
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
+  }
+  
+  /* Add some padding inside the card container */
+  .title-card-bottom {
+      display: flex;
+    padding: 2px 16px;
+    height: 40%;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title-card-bottom-tiles {
+      margin: 1%;
+  }
+
+.img {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    border: 2px solid white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
 }
 
-.bg-pale-blue {
-    background-color:  hsl(236, 100%, 87%);
+.title-img {
+    margin: auto;
+    padding: 0%;
 }
-.bg-pale-blue {
-    background-color:  hsl(236, 100%, 87%);
+
+.name {
+    font-size: 1.5rem;
 }
-.bg-pale-blue {
-    background-color:  hsl(235, 46%, 20%);
+
+.namediv {
+    padding: 0%;
+    margin: auto;
 }
+
+.item-card {
+      /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  transition: 0.3s;
+  margin: 5% 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-card-top {
+    height: 30px;
+    text-align: right;
+}
+
+.item-card-top-icon {
+    width: 30%;
+}
+  /* On mouse-over, add a deeper shadow */
+  .item-card:hover {
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
+  }
+  
+  /* Add some padding inside the card container */
+  .item-card-bottom {
+      background-color: hsl(235, 46%, 20%);
+    border-radius: 8px;
+    padding: 2px 16px;
+    margin: -1px;
+  }
+
+  .item-card-bottom:hover {
+    background-color: hsl(246, 80%, 60%);
+  }
+  
+  .item-card.work {
+      background-color: hsl(15, 100%, 70%);
+  }
+  .item-card.play {
+      background-color: hsl(195, 74%, 62%);
+  }
+  .item-card.study {
+      background-color: hsl(348, 100%, 68%);
+  }
+  .item-card.exercise {
+      background-color: hsl(145, 58%, 55%);
+  }
+  .item-card.social {
+      background-color: hsl(264, 64%, 52%);
+  }
+  .item-card.selfcare {
+      background-color: hsl(43, 84%, 65%);
+  }
+
+
+  .item-card-bottom > .title {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 5%;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+
+  .item-card-bottom > .content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 5%;
+  }
+
+  .item-card-bottom >.title > .icon {
+    height: 5px;
+  }
+
+ .item-card-bottom > .content >h2 {
+     margin : 10% 0%
+ }
+
+ .item-card-bottom > .content >p {
+     margin : 5% 0%
+ }
 
 .row {
+    display: block;
+}
+
+.antirow {
     display: flex;
+}
+
+.mt-1 {
+    margin-top: 10px;
 }
 /* For mobile phones: */
 [class*="col-"] {
-    width: 100%;
+    width: auto;
   }
   
   @media only screen and (min-width: 600px) {
     /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
+    .col-s-1 {width: 100%;}
+    .col-s-2 {width: 100%;}
+    .col-s-3 {width: 100%;}
+    .col-s-4 {width: 100%;}
+    .col-s-5 {width: 100%;}
+    .col-s-6 {width: 100%;}
+    .col-s-7 {width: 100%;}
+    .col-s-8 {width: 100%;}
+    .col-s-9 {width: 100%;}
+    .col-s-10 {width: 100%;}
+    .col-s-11 {width: 100%;}
     .col-s-12 {width: 100%;}
+
+
+    .container {
+        display: flex;
+        margin: 15% 10%;
+    }
+
+    .item-card-bottom> .content >h2 {
+        margin : 20% 0%
+    }
+   
+    .item-card-bottom > .content >p {
+        margin : 15% 0%
+    }
+
+
+    .row {
+        display: flex;
+    }
+
+    .antirow {
+        display: block;
+    }
   }
   
   @media only screen and (min-width: 768px) {
@@ -71,4 +241,81 @@ body {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    
+    .container {
+        display: flex;
+        margin: 10% 15%;
+    }
+
+    .item-card {
+        /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 2%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+    .title-card-top {
+        background-color: hsl(246, 80%, 60%);
+          height: 55%;
+          padding: 3%;
+          border-radius: 8px;
+          display: block;
+      }
+
+    .title-card-bottom {
+        display: block;
+      padding: 10%;
+      height: 40%;
+      margin: 10% 0;
+    }
+
+    .item-card-bottom > .content {
+        display: block;
+      }
+
+    .title-card-bottom-tiles {
+        margin: 8% 0;
+    }
+
+    .title-img {
+        margin: auto;
+        padding: 10%;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .namediv {
+        padding: 10%;
+    
+    }
+
+    .mt-1 {
+        margin-top: 4px;
+    }
+
+    .item-card-bottom >h2 {
+        margin : 10% auto
+    }
+   
+    .item-card-bottom >p {
+        margin : 5% auto
+    }
+
+
+
+
+
+    .row {
+        display: flex;
+    }
+
+    .antirow {
+        display: block;
+    }
   }

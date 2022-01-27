@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <script src="/script.js"></script>
@@ -13,89 +15,186 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
+<body>
   <section>
-    <div class="main row">
-      <div class="namecard card col-3">
-        Report for
-        Jeremy Robson
-      
-        Daily
-        Weekly
-        Monthly
+    <div class="container">
+      <div class="title-card col-3">
+        <div class="title-card-top">
+          <div class="title-img">
+            <img class="img" src="./images/image-jeremy.png" alt="">
+          </div>
+          <div class="namediv">
+            <p>
+              Report for
+            </p>
+            <h1 class="name">
+              Jeremy Robson
+            </h1>
+          </div>
+                 </div>
+        <div class="title-card-bottom">
+          <div class="title-card-bottom-tiles">
+            Daily
+          </div>
+          <div class="title-card-bottom-tiles">
+            Weekly
+          </div>
+          <div class="title-card-bottom-tiles">
+            Monthly
+          </div>
+        </div>
       </div>
-      <div class="col-9">
+      <div class="col-9 mt-1">
         <div class="row">
-          <div class="col-4">
-            Work
-            5hrs <!-- daily -->
-            Previous - 7hrs <!-- daily -->
-            32hrs <!-- weekly -->
-            Previous - 36hrs <!-- weekly -->
-            103hrs <!-- monthly -->
-            Previous - 128hrs <!-- monthly -->
+          <div class="item-card col-4 work">
+            <div class="item-card-top">
+              <img class="item-card-top-icon" src="images/icon-work.svg" alt="work">
+            </div>
+            <div class="item-card-bottom">
+              <div class="title">
+                <div>
+                  Work
+                </div>
+                <img class="icon" src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="content">
+                <h2>
+                  5hrs
+                </h2>
+                <p>
+                  Previous - 7hrs
+                </p>   
+              </div> 
+            </div>
           </div>
-          <div class="col-4">
-            Play
-            1hr <!-- daily -->
-            Previous - 2hrs <!-- daily -->
-            10hrs <!-- weekly -->
-            Previous - 8hrs <!-- weekly -->
-            23hrs <!-- monthly -->
-            Previous - 29hrs <!-- monthly -->
+          <div class="item-card col-4  play">
+            <div class="item-card-top ">
+              <img class="item-card-top-icon" src="images/icon-play.svg" alt="work">
+            </div>
+            <div class="item-card-bottom">
+              <div class="title">
+                <div>
+                  Play
+                </div>
+                <img class="icon" src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="content">
+                <h2>
+                  5hrs
+                </h2>
+                <p>
+                  Previous - 7hrs
+                </p>   
+              </div> 
+            </div>
           </div>
-          <div class="col-4">
-            Study
-            0hrs <!-- daily -->
-            Previous - 1hr <!-- daily -->
-            4hrs <!-- weekly -->
-            Previous - 7hrs <!-- weekly -->
-            13hrs <!-- monthly -->
-            Previous - 19hrs <!-- monthly -->
+          <div class="item-card col-4  study">
+            <div class="item-card-top ">
+              <img class="item-card-top-icon" src="images/icon-study.svg" alt="work">
+            </div>
+            <div class="item-card-bottom">
+              <div class="title">
+                <div>
+                  Study
+                </div>
+                <img class="icon" src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="content">
+                <h2>
+                  5hrs
+                </h2>
+                <p>
+                  Previous - 7hrs
+                </p>   
+              </div> 
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
-            Exercise
-            1hr <!-- daily -->
-            Previous - 1hr <!-- daily -->
-            4hrs <!-- weekly -->
-            Previous - 5hrs <!-- weekly -->
-            11hrs <!-- monthly -->
-            Previous - 18hrs <!-- monthly -->
+          <div class="item-card col-4  exercise">
+            <div class="item-card-top ">
+              <img class="item-card-top-icon" src="images/icon-exercise.svg" alt="work">
+            </div>
+            <div class="item-card-bottom">
+              <div class="title">
+                <div>
+                  Exercise
+                </div>
+                <img class="icon" src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="content">
+                <h2>
+                  5hrs
+                </h2>
+                <p>
+                  Previous - 7hrs
+                </p>   
+              </div>           
+            </div>
           </div>
-          <div class="col-4">
-            Social
-            1hr <!-- daily -->
-            Previous - 3hrs <!-- daily -->
-            5hrs <!-- weekly -->
-            Previous - 10hrs <!-- weekly -->
-            21hrs <!-- monthly -->
-            Previous - 23hrs <!-- monthly -->
+          <div class="item-card col-4  social">
+            <div class="item-card-top ">
+              <img class="item-card-top-icon" src="images/icon-social.svg" alt="work">
+            </div>
+            <div class="item-card-bottom">
+              <div class="title">
+                <div>
+                  Social
+                </div>
+                <img class="icon" src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="content">
+                <h2>
+                  5hrs
+                </h2>
+                <p>
+                  Previous - 7hrs
+                </p>   
+              </div> 
+            </div>
           </div>
-          <div class="col-4">
-            Self Care
-            0hrs <!-- daily -->
-            Previous - 1hr <!-- daily -->
-            2hrs <!-- weekly -->
-            Previous - 2hrs <!-- weekly -->
-            7hrs <!-- monthly -->
-            Previous - 11hrs <!-- monthly -->
+          <div class="item-card col-4  selfcare">
+            <div class="item-card-top ">
+              <img class="item-card-top-icon" src="images/icon-self-care.svg" alt="work">
+            </div>
+            <div class="item-card-bottom">
+              <div class="title">
+                <div>
+                  Self Care
+                </div>
+                <img class="icon" src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="content">
+                <h2>
+                  5hrs
+                </h2>
+                <p>
+                  Previous - 7hrs
+                </p>   
+              </div> 
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Akhil Surya</a>.
   </div>
 </body>
+
 </html>
