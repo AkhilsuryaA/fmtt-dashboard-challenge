@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="test.css">
+    <script src="data.js"></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="col-3 col-s-12 ">
+                <div class="user card ">
+                    <div class="card-top">
+                        <div class="title-img">
+                            <img class="img" src="./images/image-jeremy.png" alt="">
+                        </div>
+                        <div class="namediv">
+                            <p>
+                                Report for
+                            </p>
+                            <h1 class="name">
+                                Jeremy Robson
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-bottom-tiles" id='daily'>
+                            Daily
+                        </div>
+                        <div class="card-bottom-tiles" id='weekly'>
+                            Weekly
+                        </div>
+                        <div class="card-bottom-tiles" id='monthly'>
+                            Monthly
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 col-s-12">
+                <div class="details">
+                    <div class="row first">
+                        <div class=" col-4 col-s-6">
+                            <div class="item-card work" id='work'>
+                                <div class="item-card-top">
+                                  <img class="item-card-top-icon" src="images/icon-work.svg" alt="work">
+                                </div>
+                                <div class="item-card-bottom">
+                                  <div class="title">
+                                    <div>
+                                      Work
+                                    </div>
+                                    <img class="icon" src="images/icon-ellipsis.svg" alt="">
+                                  </div>
+                                  <div class="content">
+                                    <h2 id="work-h2">
+                                      5hrs
+                                    </h2>
+                                    <p id="work-p">
+                                      Previous - 7hrs
+                                    </p>   
+                                  </div> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-4 col-s-6">
+                            <div class="item-card play" id='play'>
+                                <div class="item-card-top">
+                                  <img class="item-card-top-icon" src="images/icon-play.svg" alt="play">
+                                </div>
+                                <div class="item-card-bottom">
+                                  <div class="title">
+                                    <div>
+                                      Work
+                                    </div>
+                                    <img class="icon" src="images/icon-ellipsis.svg" alt="">
+                                  </div>
+                                  <div class="content">
+                                    <h2 id="play-h2">
+                                      5hrs
+                                    </h2>
+                                    <p id="play-p">
+                                      Previous - 7hrs
+                                    </p>   
+                                  </div> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-4 col-s-6">
+                            <div class="item-card study" id='study'>
+                                <div class="item-card-top">
+                                  <img class="item-card-top-icon" src="images/icon-study.svg" alt="study">
+                                </div>
+                                <div class="item-card-bottom">
+                                  <div class="title">
+                                    <div>
+                                      Work
+                                    </div>
+                                    <img class="icon" src="images/icon-ellipsis.svg" alt="">
+                                  </div>
+                                  <div class="content">
+                                    <h2 id="study-h2">
+                                      5hrs
+                                    </h2>
+                                    <p id="study-p">
+                                      Previous - 7hrs
+                                    </p>   
+                                  </div> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row second">
+                        <div class="col-4 col-s-6">
+                            <div class="item-card exercise" id='exercise'>
+                                <div class="item-card-top">
+                                  <img class="item-card-top-icon" src="images/icon-exercise.svg" alt="exercise">
+                                </div>
+                                <div class="item-card-bottom">
+                                  <div class="title">
+                                    <div>
+                                      Work
+                                    </div>
+                                    <img class="icon" src="images/icon-ellipsis.svg" alt="">
+                                  </div>
+                                  <div class="content">
+                                    <h2 id="exercise-h2">
+                                      5hrs
+                                    </h2>
+                                    <p id="exercise-p">
+                                      Previous - 7hrs
+                                    </p>   
+                                  </div> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-4 col-s-6">
+                            <div class="item-card social" id='social'>
+                                <div class="item-card-top">
+                                  <img class="item-card-top-icon" src="images/icon-social.svg" alt="social">
+                                </div>
+                                <div class="item-card-bottom">
+                                  <div class="title">
+                                    <div>
+                                      Work
+                                    </div>
+                                    <img class="icon" src="images/icon-ellipsis.svg" alt="">
+                                  </div>
+                                  <div class="content">
+                                    <h2 id="social-h2">
+                                      5hrs
+                                    </h2>
+                                    <p id="social-p">
+                                      Previous - 7hrs
+                                    </p>   
+                                  </div> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-4 col-s-6">
+                            <div class="item-card selfcare" id='selfcare'>
+                                <div class="item-card-top">
+                                  <img class="item-card-top-icon" src="images/icon-self-care.svg" alt="selfcare">
+                                </div>
+                                <div class="item-card-bottom">
+                                  <div class="title">
+                                    <div>
+                                      Work
+                                    </div>
+                                    <img class="icon" src="images/icon-ellipsis.svg" alt="">
+                                  </div>
+                                  <div class="content">
+                                    <h2 id="selfcare-h2">
+                                      5hrs
+                                    </h2>
+                                    <p id="selfcare-p">
+                                      Previous - 7hrs
+                                    </p>   
+                                  </div> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/AkhilsuryaA">Akhil Surya</a>.
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <script src="/script.js"></script>
+  <script  src="data.js"></script>
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -42,22 +42,22 @@
               Jeremy Robson
             </h1>
           </div>
-                 </div>
+        </div>
         <div class="title-card-bottom">
-          <div class="title-card-bottom-tiles">
+          <div class="title-card-bottom-tiles" id='daily'>
             Daily
           </div>
-          <div class="title-card-bottom-tiles">
+          <div class="title-card-bottom-tiles" id='weekly'>
             Weekly
           </div>
-          <div class="title-card-bottom-tiles">
+          <div class="title-card-bottom-tiles" id='monthly'>
             Monthly
           </div>
         </div>
       </div>
       <div class="col-9 mt-1">
         <div class="row">
-          <div class="item-card col-4 work">
+          <div class="item-card col-4 work" id='work'>
             <div class="item-card-top">
               <img class="item-card-top-icon" src="images/icon-work.svg" alt="work">
             </div>
@@ -69,16 +69,16 @@
                 <img class="icon" src="images/icon-ellipsis.svg" alt="">
               </div>
               <div class="content">
-                <h2>
+                <h2 id="work-h2">
                   5hrs
                 </h2>
-                <p>
+                <p id="work-p">
                   Previous - 7hrs
                 </p>   
               </div> 
             </div>
           </div>
-          <div class="item-card col-4  play">
+          <div class="item-card col-4  play" id="play">
             <div class="item-card-top ">
               <img class="item-card-top-icon" src="images/icon-play.svg" alt="work">
             </div>
@@ -90,16 +90,16 @@
                 <img class="icon" src="images/icon-ellipsis.svg" alt="">
               </div>
               <div class="content">
-                <h2>
+                <h2 id="play-h2">
                   5hrs
                 </h2>
-                <p>
+                <p id="play-p">
                   Previous - 7hrs
                 </p>   
               </div> 
             </div>
           </div>
-          <div class="item-card col-4  study">
+          <div class="item-card col-4  study" id="study">
             <div class="item-card-top ">
               <img class="item-card-top-icon" src="images/icon-study.svg" alt="work">
             </div>
@@ -111,10 +111,10 @@
                 <img class="icon" src="images/icon-ellipsis.svg" alt="">
               </div>
               <div class="content">
-                <h2>
+                <h2 id="study-h2">
                   5hrs
                 </h2>
-                <p>
+                <p id="study-p">
                   Previous - 7hrs
                 </p>   
               </div> 
@@ -122,7 +122,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="item-card col-4  exercise">
+          <div class="item-card col-4  exercise" id="exercise">
             <div class="item-card-top ">
               <img class="item-card-top-icon" src="images/icon-exercise.svg" alt="work">
             </div>
@@ -134,16 +134,16 @@
                 <img class="icon" src="images/icon-ellipsis.svg" alt="">
               </div>
               <div class="content">
-                <h2>
+                <h2 id="exercise-h2">
                   5hrs
                 </h2>
-                <p>
+                <p id="exercise-p">
                   Previous - 7hrs
                 </p>   
               </div>           
             </div>
           </div>
-          <div class="item-card col-4  social">
+          <div class="item-card col-4  social" id="social">
             <div class="item-card-top ">
               <img class="item-card-top-icon" src="images/icon-social.svg" alt="work">
             </div>
@@ -155,16 +155,16 @@
                 <img class="icon" src="images/icon-ellipsis.svg" alt="">
               </div>
               <div class="content">
-                <h2>
+                <h2 id="social-h2">
                   5hrs
                 </h2>
-                <p>
+                <p id="social-p">
                   Previous - 7hrs
                 </p>   
               </div> 
             </div>
           </div>
-          <div class="item-card col-4  selfcare">
+          <div class="item-card col-4  selfcare" id="selfcare">
             <div class="item-card-top ">
               <img class="item-card-top-icon" src="images/icon-self-care.svg" alt="work">
             </div>
@@ -176,10 +176,10 @@
                 <img class="icon" src="images/icon-ellipsis.svg" alt="">
               </div>
               <div class="content">
-                <h2>
+                <h2 id="selfcare-h2">
                   5hrs
                 </h2>
-                <p>
+                <p id="selfcare-p">
                   Previous - 7hrs
                 </p>   
               </div> 
@@ -196,5 +196,6 @@
     Coded by <a href="#">Akhil Surya</a>.
   </div>
 </body>
+<script  src="script.js"></script>
 
 </html>

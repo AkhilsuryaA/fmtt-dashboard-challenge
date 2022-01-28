@@ -59,6 +59,8 @@ h2 {
   }
 
   .title-card-bottom-tiles {
+    cursor: pointer;
+    color: hsl(236, 100%, 87%);
       margin: 1%;
   }
 
@@ -115,7 +117,7 @@ h2 {
       background-color: hsl(235, 46%, 20%);
     border-radius: 8px;
     padding: 2px 16px;
-    margin: -1px;
+    /*margin: -1px;*/
   }
 
   .item-card-bottom:hover {
@@ -147,7 +149,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5% 5%;
+    margin: 5% 0%;
     font-size: 1rem;
     font-weight: 100;
   }
@@ -157,7 +159,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5% 5%;
+    margin: 5% 0%;
   }
 
   .item-card-bottom >.title > .icon {
@@ -209,8 +211,20 @@ h2 {
         margin: 15% 10%;
     }
 
+    .item-card {
+        /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 2%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
     .item-card-bottom> .content >h2 {
-        margin : 20% 0%
+        margin : 18% 0%
     }
    
     .item-card-bottom > .content >p {
@@ -256,6 +270,7 @@ h2 {
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 300px;
   }
 
     .title-card-top {
@@ -278,6 +293,8 @@ h2 {
       }
 
     .title-card-bottom-tiles {
+        cursor: pointer;
+        color: hsl(236, 100%, 87%);
         margin: 8% 0;
     }
 
