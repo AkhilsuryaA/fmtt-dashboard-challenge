@@ -33,9 +33,8 @@ Users should be able to:
 ![](./screenshots/screenshot.png)
 
 ### Links
-
-- Solution URL: [](https://github.com/AkhilsuryaA/fmtt-dashboard-challenge)
-- Live Site URL: [](https://akhilsuryaa.github.io/fmtt-dashboard-challenge/)
+- Solution URL: [Github Repo](https://github.com/AkhilsuryaA/fmtt-dashboard-challenge)
+- Live Site URL: [GIthub Page](https://akhilsuryaa.github.io/fmtt-dashboard-challenge/)
 
 ## My process
 
