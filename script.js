@@ -20,57 +20,6 @@ changeValues(state);
 
 const daily = document.getElementById("daily");
 if (daily) {
-
-    //const el = document.querySelector("#myId");
-    const prev_color = daily.style.color;
-const eventHandler = {
-    handlers: {
-        click(e) {
-            // do something
-            state = DAILY;
-            changeValues(DAILY);
-        },
-        mouseover(e) {
-            //console.log('hi hi ',prev_color);
-            // do something different
-            daily.setAttribute("style", "color:white;");
-        },
-        mouseout(e) {
-            //console.log('hi hi hi ',prev_color);
-            // do something different
-            daily.setAttribute("style", "color:hsl(236, 100%, 87%);");
-        },
-        default(e) {
-            console.log("unhandled event: %s", e.type);
-        }
-    },
-    // called for each event on this element
-    handleEvent(evt) {
-        //console.log(evt)
-        switch (evt.type) {
-            case "click":
-                this.handlers.click(evt);
-                break;
-            case "mouseover":
-                // click and touchstart share click handler
-                this.handlers.mouseover(evt);
-                break;
-            case "mouseout":
-                this.handlers.mouseout(evt);
-                break;
-            default:
-                this.handlers.default(evt);
-        }
-    }
-}
-
-Object.keys(eventHandler.handlers)
-    .map(eventName => daily.addEventListener(eventName, eventHandler))
-
-/*
-
-  daily.addEventListener("mouseover", func(DAILY), false);
-  daily.addEventListener("mouseout", func1(DAILY), false);
   daily.addEventListener(
     "click",
     (event) => {
@@ -78,94 +27,21 @@ Object.keys(eventHandler.handlers)
       changeValues(DAILY);
     },
     false
-  );*/
+  );
 }
 const weekly = document.getElementById("weekly");
 if (weekly) {
-    const eventHandler = {
-        handlers: {
-            click(e) {
-                // do something
-                state = WEEKLY;
-                changeValues(WEEKLY);
-            },
-            mouseover(e) {
-                // do something different
-                //console.log(e)
-                weekly.setAttribute("style", "color:white;");
-            },
-            mouseout(e) {
-                // do something different
-                weekly.setAttribute("style", "color:hsl(236, 100%, 87%);");
-            },
-            default(e) {
-                console.log("unhandled event: %s", e.type);
-            }
-        },
-        // called for each event on this element
-        handleEvent(evt) {
-            switch (evt.type) {
-                case "click":
-                    this.handlers.click(evt);
-                    break;
-                case "mouseover":
-                    // click and touchstart share click handler
-                    this.handlers.mouseover(evt);
-                    break;
-                case "mouseout":
-                    this.handlers.mouseout(evt);
-                    break;
-                default:
-                    this.handlers.default(evt);
-            }
-        }
-    }
-    
-    Object.keys(eventHandler.handlers)
-        .map(eventName => weekly.addEventListener(eventName, eventHandler))
+    weekly.addEventListener('click', event => {
+        state = WEEKLY;
+        changeValues(WEEKLY);
+    }, false);
 }
 const monthly = document.getElementById("monthly");
 if (monthly) {
-    const eventHandler = {
-        handlers: {
-            click(e) {
-                // do something
-                state = MONTHLY;
-                changeValues(MONTHLY);
-            },
-            mouseover(e) {
-                // do something different
-                monthly.setAttribute("style", "color:white;");
-            },
-            mouseout(e) {
-                // do something different
-                monthly.setAttribute("style", "color:hsl(236, 100%, 87%);");
-            },
-            default(e) {
-                console.log("unhandled event: %s", e.type);
-            }
-        },
-        // called for each event on this element
-        handleEvent(evt) {
-            switch (evt.type) {
-                case "click":
-                    this.handlers.click(evt);
-                    break;
-                case "mouseover":
-                    // click and touchstart share click handler
-                    this.handlers.mouseover(evt);
-                    break;
-                case "mouseout":
-                    this.handlers.mouseout(evt);
-                    break;
-                default:
-                    this.handlers.default(evt);
-            }
-        }
-    }
-    
-    Object.keys(eventHandler.handlers)
-        .map(eventName => monthly.addEventListener(eventName, eventHandler))
+    monthly.addEventListener('click', event => {
+        state = MONTHLY;
+        changeValues(MONTHLY);
+    }, false);
 }
 
 function changeValues(state) {
